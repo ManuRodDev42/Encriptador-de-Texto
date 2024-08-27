@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge de MARJ</title>
+</head>
+<body>
+    <header class="header">
+        <img src="logo-alura.png" id="alura">
+    </header>
+
+    <main class="area__de__cifrado">
+        <div class="contenedor">
+            <div class="contenedor__encriptacion">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+
+            <div class="contenedor__terminos">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+
+            <div class="contenedor__botones">
+            <button onclick="hacerCifrado();" class="btn-cifrado" type="button" id="cifrado">Cifrar</button>
+            <button onclick="hacerDescifrado();" class="btn-descifrado" type="button" id="desencriptar">Descifrar</button>
+            </div>
+
+            <div class="contenedor__encriptado">
+                <img src="muñeco-alura.png" id="muñeco">
+                <div class="contenedor__encriptado__mensaje" id="mensaje-encriptado">
+                    <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+                    <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar.</p>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+                </div>
+
+                <div class="contenedor_encriptado_boton-copia">
+                    <button onclick="copiar();" class="copia" id="copiado">Copia</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="Footer">
+        <p> Manuel Alejandro Rodriguez Jimenez</p>
+        <p>2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
